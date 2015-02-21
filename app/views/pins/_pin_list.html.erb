@@ -1,0 +1,17 @@
+<% @current_user.pins.each do |p| %>
+<div class="col-md-3">
+   <div class="vertical-smallborder">
+      <section>
+         <img src="<%= link_to image_tag(p.photo.thumb) %>
+         <div class="text">
+            <span class="txt-black">
+               <h1><%= p.title %></h1>
+               <p><%= p.notes %></p>
+               <p></p>
+               <a class="button" href="<%= p.link %>">Go to page</a>
+            </span>
+         </div>
+      </section>
+   </div>
+    </div>
+<% end %>

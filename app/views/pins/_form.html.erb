@@ -1,0 +1,9 @@
+<%= simple_form_for @pin, remote: true, authenticity_token: true do |f| %>
+
+  <%= f.input :title %>
+  <%= f.input :link %>
+  <%= f.input :photo %>
+  <%= f.input :notes %>
+  <%= f.submit class: "btn btn-success btn-block" %>
+
+<% end %>

@@ -1,0 +1,22 @@
+<button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#add-pin-modal">
+  Add Pin
+</button>
+
+<p class="pull-right">
+    <%= link_to "Sign Out", sign_out_path, class: "btn btn-default" %>
+  </p>
+
+</br>
+<div id ="pin-table">
+   <%= render partial: 'pin_list' %>
+</div>
+
+<div class="modal fade" id="add-pin-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div id="pin-form">
+        <%= render partial: 'form' %>
+      </div>
+    </div>
+  </div>
+</div>
