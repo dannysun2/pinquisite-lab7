@@ -8,9 +8,10 @@ Rails.application.routes.draw do
 
   get "/sessions/new" => "sessions#new", as: :sign_in
   post "/sign-in" => "sessions#create", as: :auth
-  get "/sign-out" => "sessions#destroy", as: :sign_out
+  delete "/sign-out" => "sessions#destroy", as: :sign_out
 
   resources :pins
+  resources :users
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -4,5 +4,10 @@
 @import 'style';
 
 html body {
-   background: #2ecc71;
+   background: url(https://raw.githubusercontent.com/dannysun725/pinquisite-lab7/master/app/assets/images/45degreee_fabric.png);
+}
+
+.container-fluid {
+   padding-left: 0px;
+   padding-right: 0px;
 }

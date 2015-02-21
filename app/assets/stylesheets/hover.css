@@ -44,7 +44,7 @@ div.vertical-smallborder section{
 	-moz-box-shadow: 0 0 5px 5px #888;
 	-ms-box-shadow: 0 0 5px 5px #888;
 	-o-box-shadow: 0 0 5px 5px #888;
-	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
 
 	float:left;
 	text-align: center;

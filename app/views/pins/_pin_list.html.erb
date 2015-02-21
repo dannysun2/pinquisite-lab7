@@ -1,3 +1,18 @@
+<div class="col-md-3">
+   <div class="vertical-smallborder">
+      <section>
+         <div class="text">
+            <span class="txt-black">
+               <h1>Add Pin</h1>
+               <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#add-pin-modal">
+                 Add Pin
+               </button>
+            </span>
+         </div>
+      </section>
+   </div>
+    </div>
+
 <% @current_user.pins.each do |p| %>
 <div class="col-md-3">
    <div class="vertical-smallborder">
@@ -7,7 +22,6 @@
             <span class="txt-black">
                <h1><%= p.title %></h1>
                <p><%= p.notes %></p>
-               <p></p>
                <a class="button" href="<%= p.link %>">Go to page</a>
             </span>
          </div>
