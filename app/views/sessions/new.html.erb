@@ -1,17 +1,32 @@
-</br>
-<div class='panel panel-default col-md-4 col-md-offset-4'>
-   <div class='panel-body'>
-   <%= form_tag auth_path do %>
-  <div class="form-group">
-    <%= label_tag :username %><br/>
-    <%= text_field_tag :username, "", class: "form-control" %></br>
-    <%= label_tag :password %><br/>
-    <%= password_field_tag :password, "", class: "form-control" %>
-</br>
-    <div class='form-group'>
-    <%= submit_tag "Sign In", class: "btn btn-primary form-control"%>
-  </div>
-<% end %>
-</div>
-</div>
-</div>
+<div class="modal fade" id="auth-sign-in-modal" data-keyboard="false" data-backdrop="static">
+<div class="modal-dialog modal-sm">
+ <div class="modal-content">
+   <div class="modal-header">
+      <h4 class="modal-title">Login to Pinquisite</h4>
+   </div>
+   <div class="modal-body">
+
+      <div class="form-feedback">
+      </div>
+
+      <%= form_tag auth_path, remote: true do %>
+        <div class="form-group">
+          <%= label_tag :username %>
+          <%= text_field_tag :username, "", class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= label_tag :password %>
+          <%= password_field_tag :password, "", class: "form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= submit_tag "Sign In", class: "btn btn-md btn-primary form-control" %>
+        </div>
+      <% end %>
+      <span>Not a member? <%= link_to "Sign Up", new_user_path(:login) %></span>
+   </div>
+
+ </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -5,7 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= javascript_include_tag :defaults %>
-  
+
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -13,7 +13,9 @@
       <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
              <div id="navbar" class="navbar-collapse collapse">
-      <%= render 'layouts/user_widget' %>
+                <div id="header-nav">
+      <%= render partial: "layouts/user_widget" %>
+   </div>
    </div><!--/.nav-collapse -->
 </div>
 </nav>
@@ -22,7 +24,9 @@
 
 
 <div class='container-fluid'>
+   <div id="pinslist">
 <%= yield %>
+</div>
 </div>
 </body>
 </html>
