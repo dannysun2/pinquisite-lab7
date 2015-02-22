@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
 end
 
 def signed_in?
+   
   session[:user_id].to_i > 0
 end
 
