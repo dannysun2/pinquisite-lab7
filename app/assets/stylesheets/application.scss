@@ -1,13 +1,32 @@
+/*
+ *= require font-awesome
+ */
 @import 'bootstrap';
 @import 'bootstrap-sprockets';
 @import 'hover';
 @import 'style';
 
-html body {
+body {
    background: url(https://raw.githubusercontent.com/dannysun725/pinquisite-lab7/master/app/assets/images/45degreee_fabric.png);
 }
 
 .container-fluid {
    padding-left: 0px;
    padding-right: 0px;
+}
+
+section {
+   i {
+      margin-top: 140px;
+      color: gray
+   }
+   p {
+      color: gray;
+      margin-top: 5px;
+   }
+}
+
+
+.modal-content {
+   padding: 15px;
 }

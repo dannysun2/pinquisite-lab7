@@ -1,0 +1,10 @@
+<div class="panel panel-default col-md-4 col-md-offset-4">
+   <h1 class='heading text-center'>Sign Up</h1>
+   <div class="panel-body">
+<%= simple_form_for(@user) do |f| %>
+  <%= f.input :username %>
+  <%= f.input :password %>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
+</div>
+</div>

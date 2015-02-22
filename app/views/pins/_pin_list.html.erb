@@ -1,23 +1,19 @@
 <div class="col-md-3">
-   <div class="vertical-smallborder">
-      <section>
-         <div class="text">
-            <span class="txt-black">
-               <h1>Add Pin</h1>
-               <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#add-pin-modal">
-                 Add Pin
-               </button>
-            </span>
-         </div>
-      </section>
-   </div>
+   <a class="entire" data-toggle="modal" data-target="#add-pin-modal">
+  <div class="vertical-smallborder">
+     <section>
+        <i class="fa fa-plus-circle fa-4x"></i>
+        <p>Add Pin</p>
+     </section>
+  </div>
+</a>
     </div>
 
 <% @current_user.pins.each do |p| %>
 <div class="col-md-3">
    <div class="vertical-smallborder">
       <section>
-         <img src="<%= link_to image_tag(p.photo.thumb) %>
+         <%= link_to image_tag(p.photo.thumb) %>
          <div class="text">
             <span class="txt-black">
                <h1><%= p.title %></h1>

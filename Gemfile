@@ -47,3 +47,7 @@ gem 'rails_admin'
 gem 'simple_form', '3.1.0.rc2'
 gem "mini_magick"
 gem 'modernizr-rails'
+gem 'font-awesome-rails'
+gem 'remotipart', '~> 1.2'
+gem 'fog'
+gem 'rails_12factor'

@@ -4,6 +4,8 @@
   <title>Pinquisite</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag :defaults %>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -17,8 +19,9 @@
 </nav>
 </div>
 <br><br><br>
-<div class='container-fluid'>
 
+
+<div class='container-fluid'>
 <%= yield %>
 </div>
 </body>

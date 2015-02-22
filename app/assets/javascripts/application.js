@@ -15,3 +15,4 @@
 //= require bootstrap
 //= require_tree .
 //= require modernizr
+//= require jquery.remotipart
