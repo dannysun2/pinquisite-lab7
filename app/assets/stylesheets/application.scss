@@ -27,10 +27,28 @@ section {
 }
 
 
-.modal-content {
+.modal-content-login {
+   background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    outline: 0 none;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
    padding: 15px;
-   background: url(http://static.pexels.com/wp-content/uploads/2014/09/architecture-3014.jpg);
-   background-size: 300%;
+   background: url(https://raw.githubusercontent.com/dannysun725/pinquisite-lab7/master/app/assets/images/backdrop.jpg);
+   background-size: 170%;
    background-position: center;
    background-repeat: no-repeat;
+   span {
+      color: white;
+   }
+   a:active, a:hover, a {
+      color: white;
+      font-weight: bold;
+   }
+}
+
+.modal-content {
+   padding: 15px;
 }
