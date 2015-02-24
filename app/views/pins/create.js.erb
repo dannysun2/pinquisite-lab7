@@ -2,6 +2,5 @@
   $("#pin-form").html("<%= escape_javascript render partial: 'form' %>");
   <% else %>
     $("#pin-form").html("<%= j render partial: 'form' %>");
-    $("#add-pin-modal").modal('hide');
     $("#pin-table").html("<%= j render partial: 'pin_list' %>");
   <% end %>

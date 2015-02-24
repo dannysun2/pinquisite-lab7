@@ -4,6 +4,12 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :exception
 
+  before_action :fetch_current_user
+
+  def fetch_current_user
+  @current_user = User.find_by id: session[:user_id]
+  end
+
   def authenticate_user!
     if signed_in?
     @current_user = User.find session[:user_id]
@@ -13,7 +19,6 @@ class ApplicationController < ActionController::Base
 end
 
 def signed_in?
-   
   session[:user_id].to_i > 0
 end
 

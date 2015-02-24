@@ -3,7 +3,6 @@
 
   $("#header-nav").html("<%= j render partial: "layouts/user_widget" %>");
   $("#pinslist").html("<%= j render partial: "pins/pin_list" %>");
-  $("#add-pin-modal").modal()
 <% else %>
 
   $(".form-feedback").append($('<div class="alert alert-danger" role="alert">Email or Password was bad bad bad</div>'));
