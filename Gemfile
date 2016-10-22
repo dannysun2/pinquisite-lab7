@@ -41,6 +41,13 @@ group :development, :test do
   gem 'spring'
 end
 
+group :development do
+  gem 'capistrano', '~> 3.1.0'
+  gem 'capistrano-bundler', '~> 1.1.2'
+  gem 'capistrano-rails', '~> 1.1.1'
+  gem 'capistrano-rbenv', github: "capistrano/rbenv"
+end
+
 gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'rails_admin'
@@ -50,5 +57,5 @@ gem 'modernizr-rails'
 gem 'font-awesome-rails'
 gem 'remotipart', '~> 1.2'
 gem 'fog'
-gem 'rails_12factor'
+# gem 'rails_12factor'
 gem 'dotenv-rails'
