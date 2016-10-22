@@ -1,8 +1,8 @@
 set :application, 'pinquisite'
 set :repo_url, 'git@github.com:dannysun2/pinquisite-lab7.git'
 
-set :deploy_to, '/home/deploy/pinquisite'
-
+set :deploy_to, "/home/deploy/apps/#{fetch(:application)}"
+set :keep_releases,   5
 set :linked_files, %w{config/database.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
